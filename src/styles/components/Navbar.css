@@ -1,0 +1,22 @@
+/* Navbar.css */
+.navbar-brand {
+  font-weight: bold;
+}
+
+.nav-link {
+  margin-right: 1rem;
+}
+
+.navbar {
+  background-color: white !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+  height: 80px; 
+}
+
+.dropdown-menu {
+  max-height: 300px;
+  overflow-y: auto;
+}

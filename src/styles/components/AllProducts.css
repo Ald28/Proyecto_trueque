@@ -1,0 +1,50 @@
+.all-products-container {
+  padding: 20px;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.card-img-top {     
+  width: 100%;     
+  height: 200px; /* Ajusta esta altura según tus necesidades */     
+  object-fit: contain; /* Cambiado de cover a contain */   
+}
+
+.user-info-overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.user-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.user-info-overlay small {
+  color: white; /* Cambia el color del texto a blanco */
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  color: #777;
+}

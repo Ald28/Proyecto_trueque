@@ -1,0 +1,27 @@
+/* src/styles/components/Footer.css */
+
+.footer {
+    padding-top: 10px; /* Aumenta el padding superior para hacerlo más grueso */
+    padding-bottom: 10px; /* Aumenta el padding inferior para hacerlo más grueso */
+    background-color: #00B1F7; /* Color personalizado */
+  }
+  
+  .footer .text-uppercase {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .footer .list-unstyled {
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .footer .list-unstyled li {
+    margin-bottom: 10px;
+  }
+  
+  .footer .bg-custom-dark {
+    background-color: #00B1F7 !important; /* Un color ligeramente más oscuro para el área de derechos reservados */
+    padding: 5px 0; /* Asegura que esta sección también tenga padding */
+  }
+  

@@ -1,0 +1,39 @@
+/* src/styles/components/Register.css */
+
+.logo {
+    width: 150px; /* Ajusta el tamaño del logo */
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .btn-custom {
+    background-color: #00B1F7; /* Color del botón */
+    border: none;
+    color: #fff; /* Color del texto en blanco */
+  }
+  
+  .btn-custom:hover {
+    background-color: #0083c5; /* Color del botón al pasar el ratón por encima */
+  }
+  
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 30px;
+  }
+  
+  .form-control {
+    border-radius: 5px;
+  }
+  
+  .btn-link {
+    color: #00B1F7;
+  }
+  
+  .register-container {
+    margin-bottom: 100px; /* Ajusta el valor según sea necesario */
+  }
+  

@@ -1,0 +1,30 @@
+/* src/styles/components/DetallesProducto.css */
+
+.container {
+    margin-top: 20px;
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .user-icon-overlay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-icon-overlay img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+  }
+  
+  .user-icon-overlay .user-name {
+    font-size: 14px;
+    color: white;
+  }
+  

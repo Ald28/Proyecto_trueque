@@ -1,0 +1,52 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    margin-bottom: 50px;
+  }
+  
+  .login-card {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Ajusta este valor según sea necesario */
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-title {
+    margin-bottom: 1.5rem;
+    color: #343a40;
+  }
+  
+  .logo-image {
+    max-width: 150px; /* Ajusta este tamaño según sea necesario */
+    width: 100%;
+  }
+  
+  .btn-custom {
+    background-color: #00B1F7;
+    border-color: #00B1F7;
+    color: white;
+  }
+  
+  .btn-custom:hover {
+    background-color: #009bde;
+    border-color: #009bde;
+  }
+  
+  .btn-link {
+    color: #00B1F7;
+  }
+  
+  .btn-link:hover {
+    color: #009bde;
+  }
+  

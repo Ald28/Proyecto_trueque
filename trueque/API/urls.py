@@ -19,7 +19,6 @@ urlpatterns = [
     path('productos/usuario/<int:usuario_id>/', views.get_productos_by_usuario, name='get_productos_by_usuario'),
     path('', include(router.urls)),
     path('auth/login/', views.login_view, name='login'),  # Ruta para login
-    path('auth/register/', views.register_view, name='register'),  # Ruta para registro
     path('create_categoria/', views.create_categoria, name='create_categoria'),
     path('create_carrera/', views.create_carrera, name='create_carrera'),
     path('usuarios/delete/<int:pk>/', delete_usuario, name='delete_usuario'),

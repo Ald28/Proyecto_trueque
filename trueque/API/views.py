@@ -60,38 +60,7 @@ def login_view(request):
             return JsonResponse({'error': 'Invalid credentials'}, status=400)
     except usuario.DoesNotExist:
         return JsonResponse({'error': 'Invalid credentials'}, status=400)
-
-@api_view(['POST'])
-def register_view(request):
-    data = request.data
-    file = request.FILES.get('imagen')  # Obtiene la imagen del archivo subido
-    data['password'] = make_password(data['password'])  # Encripta la contraseña
-
-    # Crea una instancia de usuario sin guardar en la base de datos aún
-    user = usuario(
-        name=data.get('name'),
-        lastname=data.get('lastname'),
-        phone=data.get('phone'),
-        email=data.get('email'),
-        password=data.get('password'),
-        carrera_id=data.get('carrera'),
-        imagen=file  # Asigna la imagen subida
-    )
-
-    # Asigna el rol de usuario por defecto
-    try:
-        role = roles.objects.get(tipo='administrador')
-    except roles.DoesNotExist:
-        return JsonResponse({'error': 'El rol especificado no existe.'}, status=400)
     
-    user.roles = role
-
-    # Guarda el usuario en la base de datos
-    try:
-        user.save()
-        return JsonResponse(usuarioSerializer(user).data, status=201)
-    except Exception as e:
-        return JsonResponse({'error': str(e)}, status=400)
 def create_producto(request):
     if request.method == 'POST':
         data = json.loads(request.body)

@@ -28,7 +28,7 @@ class usuario(models.Model):
     phone = models.CharField(max_length=100)
     email = models.CharField(max_length=100)
     password = models.CharField(max_length=100)
-    carrera = models.ForeignKey(carrera, on_delete=models.CASCADE)
+    carrera = models.ForeignKey(carrera, on_delete=models.CASCADE, null=True, blank=True)
     roles = models.ForeignKey(roles, on_delete=models.CASCADE)
     imagen = models.ImageField(upload_to='imagenes/',verbose_name='Imagen',null=True)
     def __str__(self):
